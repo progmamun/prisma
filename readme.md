@@ -7,7 +7,11 @@
 ### Getting started
 
 - `yarn init -y`
-- `prisma typescript ts-node @types/node -D`
+- `yarn add prisma typescript ts-node @types/node -D`
 - `npx tsc --init`
 - `npx prisma`
 - `npx prisma init`
+
+---
+
+- `npx prisma migrate dev --name init`
