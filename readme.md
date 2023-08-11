@@ -15,3 +15,7 @@
 ---
 
 - `npx prisma migrate dev --name init`
+
+---
+
+- `npm ts-node index.ts` (run)
