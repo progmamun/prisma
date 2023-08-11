@@ -11,6 +11,9 @@
 - `npx tsc --init`
 - `npx prisma`
 - `npx prisma init`
+- `yarn add express cors`
+- `yarn add @types/express -D`
+- `yarn add @types/cors -D`
 
 ---
 
