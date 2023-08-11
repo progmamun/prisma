@@ -19,3 +19,5 @@
 ---
 
 - `npm ts-node index.ts` (run)
+- `npx prisma migrate dev`
+- `npx prisma generate`

@@ -7,8 +7,9 @@ async function main() {
   //   console.log(allUsers);
   const postUser = await prisma.user.create({
     data: {
-      email: "mamun@gmail.com",
-      name: "Al Mamun",
+      email: "mamunkhan@gmail.com",
+      name: "Al Mamun khan",
+      age: 23,
     },
   });
 }
