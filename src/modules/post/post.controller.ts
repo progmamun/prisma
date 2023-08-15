@@ -32,7 +32,57 @@ const getAllPost = async (req: Request, res: Response) => {
   }
 };
 
+const getSinglePost = async (req: Request, res: Response) => {
+  const id = parseInt(req.params.id);
+  // const data = req.body;
+  try {
+    const result = await PostService.getSinglePost(id);
+
+    res.send({
+      success: true,
+      message: "Get Single Post successfully!",
+      data: result,
+    });
+  } catch (err) {
+    res.send(err);
+  }
+};
+
+const updatePost = async (req: Request, res: Response) => {
+  const id = parseInt(req.params.id);
+  // const data = req.body;
+  try {
+    const result = await PostService.updatePost(id, req.body);
+
+    res.send({
+      success: true,
+      message: "Post Updated successfully!",
+      data: result,
+    });
+  } catch (err) {
+    res.send(err);
+  }
+};
+
+const deletePost = async (req: Request, res: Response) => {
+  const id = parseInt(req.params.id);
+  try {
+    const result = await PostService.deletePost(id);
+
+    res.send({
+      success: true,
+      message: "Deleted Post successfully!",
+      data: result,
+    });
+  } catch (err) {
+    res.send(err);
+  }
+};
+
 export const PostController = {
   createPost,
   getAllPost,
+  getSinglePost,
+  updatePost,
+  deletePost,
 };
