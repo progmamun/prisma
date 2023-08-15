@@ -28,6 +28,11 @@
 
 ---
 
+- `npx prisma db pull` (clone existing db created table)
+- `npx prisma db push`
+
+---
+
 # ER Diagram
 
 ![ER Diagram](https://camo.githubusercontent.com/34a16548e9a8b0fc8691cdcbe5e4591bbbdab5fab991cc0ed04b0cb799262f55/68747470733a2f2f692e6962622e636f2f516a6a72476d682f65722d6469616772616d2e706e67)

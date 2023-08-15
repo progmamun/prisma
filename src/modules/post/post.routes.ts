@@ -8,5 +8,6 @@ router.get("/", PostController.getAllPost);
 router.get("/:id", PostController.getSinglePost);
 router.patch("/:id", PostController.updatePost);
 router.delete("/:id", PostController.deletePost);
+router.get("/learn-query", PostController.learnAggregateGrouping);
 
 export const PostRoutes = router;
